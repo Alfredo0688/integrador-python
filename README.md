@@ -5,7 +5,7 @@ Este repositorio contiene el código y los archivos correspondientes al **Trabaj
 ## Autores
 
 - **María Silvia Ariño**
-- **Alfredo Núñez**
+- **Alfredo Nuñez**
 
 ## Descripción
 
