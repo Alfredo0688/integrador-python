@@ -87,6 +87,22 @@ def listar_generos():
     except:
         pass
 
+def listar_michis():
+    conn = Conneccion()
+    listar_michis = []
+
+    sql= f'''
+        SELECT * FROM gatos;
+'''
+    try:
+        conn.cursor.execute(sql)
+        listar_michis = conn.cursor.fetchall()
+        conn.cerrar_con()
+
+        return listar_michis
+    except:
+        pass
+
 def editar_peli(pelicula, id):
     conn = Conneccion()
 
