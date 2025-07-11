@@ -127,9 +127,6 @@ class Frame(tk.Frame):
         try:
             self.id_paseo_gatos = self.tabla.item(self.tabla.selection())['text']
 
-            #self.nombre_peli = self.tabla.item(self.tabla.selection())['values'][0]
-            #self.dura_peli = self.tabla.item(self.tabla.selection())['values'][1]
-            #self.gene_peli = self.tabla.item(self.tabla.selection())['values'][2]
 
             #Declaramos variables que almacenan los campos del registro de la tabla
             self.fecha_paseo = self.tabla.item(self.tabla.selection())['values'][0]
@@ -141,14 +138,12 @@ class Frame(tk.Frame):
 
             #setea los campos en las cajas de texto
             self.habilitar_campos()
-            #self.fecha.set(self.nombre_peli)
             self.entry_paseos.current(self.paseos.index(self.fecha_paseo))
             self.entry_michi.current(self.michi.index(self.nombre_gato))
             self.hora.set(self.hora_paseo)
             self.pagado.set(self.paseo_pagado)
             self.observaciones.set(self.observaciones_campo)
 
-            #self.entry_michi.current(self.michi.index(self.gene_peli))
         except:
             pass  
     
@@ -160,9 +155,9 @@ class Frame(tk.Frame):
         if response:    
             consulta.borrar_gatos_paseos(int(self.id_paseo_gatos))
         else:
-            messagebox.showinfo("MIRA BIEN", "CASI BORRAS ALGO EQUIVOCADO")
+            messagebox.showinfo("Registro no borrado")
         
-        self.id_peli = None
+        self.id_paseo_gatos = None
         self.mostrar_tabla()
 
     
@@ -211,7 +206,7 @@ class Frame(tk.Frame):
         self.fecha.set('')
         self.hora.set('')
         self.entry_michi.current(0)
-        self.id_peli = None
+        self.id_paseo_gatos = None
 
     
     def limpiar_campos(self):    
@@ -220,4 +215,4 @@ class Frame(tk.Frame):
         self.hora.set('')
         self.pagado.set('')
         self.observaciones.set('')
-        self.id_peli = None
+        self.id_paseo_gatos = None
