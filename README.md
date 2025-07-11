@@ -13,9 +13,9 @@ El proyecto reúne los conocimientos adquiridos durante la materia y refleja la 
 
 ## Estructura
 
-- Código fuente del proyecto
-- Archivos de configuración y recursos necesarios
-- Documentación complementaria
+- **Código fuente** del proyecto.
+- **Modelo relacional** de la base de datos (imagen).
+- **Archivo de base de datos SQLite** utilizado en el desarrollo.
 
 ## Entrega
 
@@ -23,5 +23,5 @@ Este repositorio constituye la entrega final del trabajo integrador.
 
 ---
 
-**Fecha:** _(11/07/2025)_  
-**Curso:** _(Python Intermedio - Tecno3f)_
+**Fecha:** 11/07/2025  
+**Curso:** Python Intermedio - Tecno3f
